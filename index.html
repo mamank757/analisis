@@ -115,16 +115,52 @@ button:active {
   font-size: 11px;
   color: #aaa;
 }
+
+/* TOMBOL HOME MELAYANG */
+.btn-home {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  z-index: 9999;
+  border: 2px solid white;
+  transition: 0.2s;
+}
+
+.btn-home:active {
+  transform: scale(0.9);
+}
+
+/* animasi pulse */
+@keyframes pulse-green {
+  0% { box-shadow: 0 0 0 0 rgba(102,187,106,0.7); }
+  70% { box-shadow: 0 0 0 12px rgba(102,187,106,0); }
+  100% { box-shadow: 0 0 0 0 rgba(102,187,106,0); }
+}
+
+.btn-home {
+  animation: pulse-green 2s infinite;
+}
 </style>
 </head>
-
+<a href="https://mamank757.github.io/petani/" class="btn-home" title="Kembali ke Home">🏠</a>
 <body>
 
 <div class="container">
 <div class="card">
 
 <h2>📱 Analisis Usaha Tani</h2>
-<h4>PPL Digital</h4>
+<h4>Menghitung Kebutuhan, Keuntungan dan Perencanaan</h4>
 
 <label>Luas Lahan (Ha)</label>
 <input type="number" id="luas" step="0.01" min="0" placeholder="Contoh: 1.5">
