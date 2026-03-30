@@ -111,7 +111,7 @@ button:active {
 
 .footer {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2px;
   font-size: 11px;
   color: #aaa;
 }
@@ -211,12 +211,23 @@ button:active {
 <button id="btnWA" style="display:none; margin-top:10px;" onclick="kirimWA()">
 📲 Kirim ke WhatsApp
 </button>
-
+<footer style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: #1e1e1e;
+  border-top: 1px solid #333;
+">
+  <div class="footer">
+  © 2026 Dibuat oleh:<br>
+  <strong>King Mamank</strong> • PPL BPP Bola - Kab. Wajo - Sulsel
 </div>
-
-<div class="footer">Dibuat oleh King Mamank - BPP Bola Kab. Wajo - Sulsel</div>
-</div>
-
+</footer>
 <script>
 function formatRupiah(el){
     let angka = el.value.replace(/[^0-9]/g, "");
